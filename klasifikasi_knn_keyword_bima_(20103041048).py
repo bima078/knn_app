@@ -10,7 +10,7 @@ import streamlit as st
 
 # Step 1: Read the Data
 try:
-    data = pd.read_excel('/content/sample_data/Book1.xlsx')
+    data = pd.read_excel('data\Book1.xlsx')
     print("Data loaded successfully")
 except Exception as e:
     print("Error loading data:", e)
@@ -140,11 +140,11 @@ for bar in bars:
     plt.text(bar.get_x() + bar.get_width() / 2, yval, round(yval, 2), ha='center', va='bottom')
 
 # Simpan model KNN ke file menggunakan pickle
-with open('knn_model.pkl', 'wb') as file:
+with open('model\knn_model.pkl', 'wb') as file:
     pickle.dump(knn_model, file)
 
 # Muat model KNN dari file menggunakan pickle
-with open('knn_model.pkl', 'rb') as file:
+with open('model\knn_model.pkl', 'rb') as file:
     loaded_knn_model = pickle.load(file)
 
 # STREAMLIT
