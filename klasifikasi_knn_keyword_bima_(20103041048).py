@@ -7,6 +7,8 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import pickle
 import streamlit as st
+import matplotlib
+matplotlib.use('Agg')
 
 # Step 1: Read the Data
 try:
