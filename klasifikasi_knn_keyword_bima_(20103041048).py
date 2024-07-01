@@ -6,6 +6,7 @@ from sklearn.metrics import accuracy_score, recall_score, f1_score, precision_sc
 from imblearn.over_sampling import SMOTE
 from sklearn.preprocessing import MinMaxScaler
 
+
 # Load the data
 try:
     data = pd.read_excel('data/Book1.xlsx')
