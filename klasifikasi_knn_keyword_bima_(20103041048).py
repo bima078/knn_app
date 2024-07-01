@@ -2,11 +2,9 @@
 import pandas as pd
 import streamlit as st
 import pickle
-from sklearn.neighbors import KNeighborsClassifier
-from sklearn.metrics import accuracy_score, recall_score, f1_score, precision_score, classification_report, confusion_matrix
+from sklearn.metrics import accuracy_score, recall_score, f1_score, precision_score
 from imblearn.over_sampling import SMOTE
 from sklearn.preprocessing import MinMaxScaler
-import seaborn as sns
 
 # Load the data
 try:
